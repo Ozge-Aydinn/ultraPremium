@@ -1,7 +1,7 @@
 
 
 /* ---------------Yazı Tipleri ----------------*/
-.top-font{
+.top-font,.slider-font{
 	font-family:"Rubik","sans-serif";
 	font-weight: bold;
 	font-size: small;	
@@ -19,6 +19,20 @@
 	font-size: large;	
 	font-weight: bold;
 }
+
+
+#boslukSil{
+  margin: 0;
+  padding: 0;
+}
+
+/* Slider yüksekliği 400pxle sınırladık ki farklı çözünürlükte boyut değişmesin*/
+.sabit-slider{
+	height: 400px;	
+}
+
+
+
 
 
 
