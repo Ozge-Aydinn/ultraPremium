@@ -17,8 +17,9 @@
 }
 .title-font{	
 	font-family:"PT Sans","sans-serif";
-	font-size: large;	
+	font-size: x-large;	
 	font-weight: bold;
+	text-align: center;
 }
 
 #boslukSil{
@@ -105,6 +106,37 @@
 	padding: 5px;
 
 }
+
+/* ------------------------- contents------------------------ */ 
+.icons{
+	width: 50px;
+    height: 50px;
+
+	padding: 15px; 
+	margin: 10px; 
+}
+
+/* dikey çizgi*/
+.vr{
+	border-left: 3px solid #6c757d;
+	height: auto;
+	padding: 0;
+
+}
+
+/* yazı ikonun sağ başından yazılsın diye */
+.icon-list{
+	float: left;
+	padding:0 10px 15px 0;
+	/* ikonu biraz soluklaştırdık*/
+	opacity: 0.3;
+}
+
+
+
+
+
+
 
 
 
