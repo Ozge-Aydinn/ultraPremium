@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ultra Premium</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/all.min.css"> <!--font awesome icon css-->
+  <link rel="stylesheet" href="css/style.css">	
+
+  <!--google Font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@100&family=Rubik:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<!-- 
+		navbar-expand-sm 	: sm ve üstü çözünürlükler için
+		navbar-dark 	  	: Koyu arka plan renkleri
+		bg-primary        :mavi  background
+    text-light        :Açık yazı rengi
+	-->
+  
+   <nav class="navbar navbar-expand-md navbar-dark bg-primary text-light top-font "> 
+      <div class="container">
+
+            <span> 
+              <i class="fas fa-envelope-open"></i>
+              Pinar@gmail.com &emsp;
+              <i class="fas fa-phone-alt"></i>
+              85 26 37 48 59 &emsp;
+              <i class="fas fa-clock"></i>
+              Mon-Sat : 9AM-6PM 
+            </span>
+            
+        
+            <!-- 
+            navbar brand       :textler için
+            nevbar-toggler     : daraltma eklentisi 
+            -->
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+
+            <!--Collapse: küçük ekran boyutlarında farklı görünüm oraya koyar-->
+            <!--justify-content-end : Sağa hizalama -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item ">
+                  <a class="nav-link" href="#"> LOGIN  </a>
+                </li>
+            
+                <li class="nav-item ">
+                  <a class="nav-link " href="#">  SUPPORT</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">LANGUAGES</a>
+                </li>
+              </ul>
+            </div> <!--collapse-->
+            
+      </div> <!-- container -->
+   </nav> <!-- Ana navbar-->
+   
+
+   <!-- sticky-top: navbarı geçtikten sonra menü sabit kalsın -->               
+   <nav class="navbar navbar-expand-md navbar-light bg-black  banner-font sticky-top" id="boslukSil" > 
+    <div class="container bg-white" >
+
+      <img src="img/brand.jpg" alt="">
+      
+      <button class="navbar-toggler" type="button"data-bs-toggle="collapse" data-bs-target="#navbarNav2"aria-controls="navbarNav2 " aria-expanded="false"aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      
+      <!--justify-content-end : Sağa hizalama -->
+      <div class="collapse navbar-collapse justify-content-end"id="navbarNav2">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link" href="#"> Home  </a>
+          </li>
+         
+          <li class="nav-item ">
+            <a class="nav-link " href="#">  Sliders</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Galleries</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pages</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div> <!--collapse-->
+    </div> <!-- container -->
+  </nav> <!-- Ana navbar-->
+
+
+
+
+  <div class="container  " id="bubble" >
+      <div class="speech-bubble contents-font " >
+        
+        <form>
+          <div class="form-group row">
+            <!--
+              d-none d-md-block   :md ve üstü çözünürlükte görünsün
+            -->
+            <div class=" col-md-7  d-none d-md-block ">
+              <span> lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquya.</span>
+            </div>
+            <!--
+              w-25 width:25%    :sayfaya göre %25 genişliğinde olsun
+              sayfa küçüldüğünde alta inmesin diye 
+            -->
+            <div class="col-md-5">
+            
+
+              <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter e-mail adress">
+
+              <button type="submit" class="btn btn-light btn-sm" >Submit</button>
+            
+          </div> <!--col-->
+          </div>
+        
+
+         
+        </form>
+    </div>
+      
+    </div>
+
+
+
+    
+  
+
+
+  
+ 
+
+
+
+
+
+
+  
+
+
+
+
+
+	<script src="js/all.min.js"></script> <!--font awesome icon js-->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>

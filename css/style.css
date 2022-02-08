@@ -8,6 +8,7 @@
 }
 .contents-font{
 	font-family:"Roboto","sans-serif";
+	font-size: 15px;
 }
 
 .banner-font{
@@ -20,15 +21,89 @@
 	font-weight: bold;
 }
 
-
 #boslukSil{
   margin: 0;
   padding: 0;
 }
+/*------------------------ Arka plan renkleri-------------------------*/
+.bg-blue{
+	background: #2c78c9;
+}
+.bg-c-blue{
+	background-color: #2c78c9;
+}
 
-/* Slider yüksekliği 400pxle sınırladık ki farklı çözünürlükte boyut değişmesin*/
-.sabit-slider{
-	height: 400px;	
+
+/*----------------------- konuşma balonu oluşturma -------------------*/
+.speech-bubble {
+	position: relative; /* göreceli konumlandırma için*/
+	
+	border-radius: 15px; /* kenar yuvarlama*/
+	top:-40px; /* 40px olduğu yerden yukarı konumlandır*/
+	z-index: 2; /* bu div üste gelsin*/	
+	
+}
+.speech-bubble {
+
+    width: auto;
+    padding: 15px; 
+	border-top-right-radius: 100px;
+    text-align: left;
+    color: white;
+	
+}
+/* bubble classı içine girildikten sonra */
+.speech-bubble:after {
+	content: '';
+	/* mutlak konumlandırma, bulunduğu alana sabit hareket eder
+	kendinden önceki dikdörtgenle birlikte hareket etsin diye yaptık
+	*/
+	position: absolute; 
+	bottom: 0;
+	left: 20%;
+	/* üçgen çizme */
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #2c78c9;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+
+}
+
+#bubble{
+	/* speech-bubble genişliği içinde bulunduğu container genişliğinin %70i kadar olsun*/
+	width: 70%; 
+	
+}
+/* bootstrap form-controlünde genişlik 100%. sabit kalması için mail texboxını 160px ile sınırladık*/
+.form-control{
+	width: 140px;
+	height: 35px;
+	
+	border-color: white;
+	border-width: 2px;
+	border-radius: 10px;
+
+	float:left; /* sayfa akışını bozarak sola yasla*/
+	padding: 2px;
+	
+}
+/* form-control classında ki placeholderın rengini değiştir*/
+.form-control::placeholder{
+	color: white;
+}
+
+
+.btn{
+	float:left;
+	font-weight: bold;
+	margin-left: 2px;
+	border-radius: 10px;
+	padding: 5px;
+
 }
 
 

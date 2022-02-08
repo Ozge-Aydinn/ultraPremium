@@ -25,7 +25,7 @@
     text-light        :Açık yazı rengi
 	-->
   
-   <nav class="navbar navbar-expand-md navbar-dark bg-primary text-light top-font "> 
+   <nav class="navbar navbar-expand-md navbar-dark bg-blue text-light top-font "> 
       <div class="container">
 
             <span> 
@@ -113,7 +113,7 @@
 
   <!--------------------    Slider   ------------------>
   <div class="container-fluid bg-black">
-    <div class="container">
+    <div class="container" style="z-index:1;">
 
         <!--
           Bir resim slider’ ı yapmak istediğimizde Carousel eklentisini kullanabiliriz.
@@ -144,7 +144,8 @@
               <img src="img/sl1.jpg" class="d-block w-100 sabit-slider" alt="...">
      
       
-      
+              <!-- d-none     :hepsinde gizle
+                  d-md-block  :md ve üstüne görün   -->
               <div class="carousel-caption d-none d-md-block">
                 <h3>Premium Solution <br> for a Modern Website</h3>
                 <h5>Psdfreebies.com</h5>
@@ -159,7 +160,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img src="img/sl3.jpg" class="d-block w-100 sabit-slider" alt="...">
+              <img src="img/sl3.jpg" class="d-block w-100 " alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>Some representative placeholder content for the third slide.</p>
@@ -177,6 +178,42 @@
         </div> <!--Slider carousel-->
     </div> <!-- Slider container-->
   </div> <!-- Slider container-fluid-->
+
+
+  <!-------------------   Speech Bubble --------------->
+  
+  <div class="container  " id="bubble" >
+    <div class="speech-bubble contents-font bg-blue " >
+      
+      <form>
+        <div class="form-group row ">
+      
+          <!--
+            d-none d-md-block   :md ve üstü çözünürlükte görünsün
+          -->
+          <div class=" col-md-7  d-none d-md-block" style="padding: 0px 0px 0px 10px;margin:0px;">
+            <span> lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquya.</span>
+          </div>
+
+          <!--
+            align-self-end : divin sağ alt köşesine hizala
+            placeholder     : textboxın içinde ki ipucu yazısı
+          -->
+          <div class="col-md-5 align-self-end" > 
+          
+            <input type="email" class="form-control bg-c-blue contents-font" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter e-mail adress">
+
+            <button type="submit" class="btn btn-light btn-sm btn-ozel  " >Submit</button>
+          
+        </div> 
+        </div> <!--form group-->
+
+      </form>
+  </div> <!--speech-bubble-->
+    
+</div>  <!--con-->
+
+  
  
 
 
