@@ -10,10 +10,19 @@
 	font-family:"Roboto","sans-serif";
 	font-size: 15px;
 }
+.contents-font-sm{
+	font-family:"Roboto","sans-serif";
+	font-size: small;
+}
 
 .banner-font{
 	font-family:"Ubuntu","sans-serif","";
 	font-weight: bold;
+}
+.banner-font-sm{
+	font-family:"Ubuntu","sans-serif","";
+	font-weight: bold;
+	font-size: small;
 }
 .title-font{	
 	font-family:"PT Sans","sans-serif";
@@ -131,8 +140,40 @@
 	/* ikonu biraz soluklaştırdık*/
 	opacity: 0.3;
 }
+/* ---------------------------Referanslar --------------------*/
+
+/* referansta ki imglerin özellikleri*/
+.ref-img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	background-color: white;
+	border: 5px solid #dee4e9;
+	margin: 5px;
+	border-radius: 100%;
+	/* yukarı kaydırma*/
+	position: relative; /* göreceli konumlandırma*/
+	z-index: 2;
+	top: -30px;
+}
 
 
+.space{
+	padding: 30px 10px;
+	margin: 30px 0;
+}
+
+
+/* refaransların bulunduğu container özellikleri*/
+.ref-bg {
+    
+	background-color: #2069b6;
+	padding: 50px;
+	border-style: solid;
+	border-color: #2c78c9;
+	border-width: 8px;
+	
+}
 
 
 
