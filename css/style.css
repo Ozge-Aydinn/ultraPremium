@@ -174,6 +174,34 @@
 	border-width: 8px;
 	
 }
+/*----------------------------footer özellikleri-------------------*/
+.link-dark{
+	text-decoration: none;
+	color: black;
+}
+.link-dark:hover{
+	color:#6c757d;
+}
+.icon-sm{
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	padding: 10px;
+	margin-right: 25px;
+}
+.yan-list{
+	list-style: none;
+	/* li etiketine teker teker float:left vermemek için ul etiketini esnek bir yapıya çevirdik. Böylece liler yanyana dizildi*/
+	display: flex;
+	padding: 0;
+	
+	
+
+
+}
+
+
+
 
 
 
